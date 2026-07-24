@@ -1,0 +1,1 @@
+Add JPG, PNG, or WebP files here, then update photography.html image paths.
