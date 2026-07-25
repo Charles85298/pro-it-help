@@ -38,3 +38,24 @@ Replace `assets/images/cf-logo.png` with a newer logo using the same filename.
 
 ## Résumé
 The downloadable résumé is stored at `assets/docs/Charles-Fleming-Resume-2024.docx`.
+
+## Photography folder organization
+
+The photography portfolio is divided into these folders:
+
+- `assets/images/photography/arizona-landscapes/`
+- `assets/images/photography/people/`
+- `assets/images/photography/architecture/`
+- `assets/images/photography/nature-detail/`
+- `assets/images/photography/night-photography/`
+- `assets/images/photography/travel-places/`
+
+To add a photograph:
+
+1. Copy the image into its matching folder.
+2. Open `assets/js/gallery-data.js`.
+3. Add the filename, title, and alternative text to that category's `photos` array.
+4. Remove the `placeholder.svg` entry after adding real photographs.
+5. Commit and push the changes to GitHub. Cloudflare Pages will redeploy automatically.
+
+Each category card on `photography.html` opens the category in `gallery.html`. The gallery includes a full-size lightbox with previous/next navigation and keyboard controls.
