@@ -6,7 +6,7 @@
   contains this website.
 */
 window.GITHUB_GALLERY_CONFIG = {
-  username: "YOUR_GITHUB_USERNAME",
+  username: "Charles85298",
   repository: "pro-it-help",
   branch: "main",
   baseFolder: "assets/images/photography",
