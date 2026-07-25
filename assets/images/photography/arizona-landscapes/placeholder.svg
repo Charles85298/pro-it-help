@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">Photography placeholder</title><desc id="d">Replace this placeholder with photographs in the arizona-landscapes category.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10233b"/><stop offset="1" stop-color="#132b49"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#g)"/><circle cx="890" cy="220" r="110" fill="#258cff" opacity=".24"/><path d="M0 690 280 420l190 180 160-130 310 290 260-220v360H0z" fill="#55dff0" opacity=".16"/><text x="600" y="420" fill="#f4f8ff" text-anchor="middle" font-family="Arial,sans-serif" font-size="54" font-weight="700">arizona-landscapes</text><text x="600" y="490" fill="#a7b5ca" text-anchor="middle" font-family="Arial,sans-serif" font-size="30">Add your photographs to this folder</text>
+</svg>
