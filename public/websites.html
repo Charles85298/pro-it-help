@@ -20,6 +20,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css">
 <script data-theme-bootstrap>(function(){try{var t=localStorage.getItem('cf-theme');if(t){document.documentElement.dataset.theme=t}else if(window.matchMedia('(prefers-color-scheme: light)').matches){document.documentElement.dataset.theme='light'}}catch(e){}})();</script>
+  <script>
+    (() => {
+      const saved = localStorage.getItem('portfolio-theme');
+      const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = saved || preferred;
+    })();
+  </script>
 </head>
 <body class="v6-websites">
 <a class="skip" href="#content">Skip to content</a>
