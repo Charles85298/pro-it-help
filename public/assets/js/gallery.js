@@ -31,9 +31,11 @@
     button.type = "button";
     button.dataset.index = String(index);
     const image = document.createElement("img");
-    image.src = data.folder + photo.file;
+    image.src = data.folder + encodeURIComponent(photo.file).replace(/%2F/g, "/");
     image.alt = photo.alt || photo.title || data.title;
     image.loading = "lazy";
+    image.decoding = "async";
+    image.addEventListener("error", () => button.remove(), { once: true });
     const caption = document.createElement("span");
     caption.textContent = photo.title || "Untitled photograph";
     button.append(image, caption);
@@ -48,7 +50,7 @@
   const show = (index) => {
     currentIndex = (index + photos.length) % photos.length;
     const photo = photos[currentIndex];
-    lightboxImage.src = data.folder + photo.file;
+    lightboxImage.src = data.folder + encodeURIComponent(photo.file).replace(/%2F/g, "/");
     lightboxImage.alt = photo.alt || photo.title || data.title;
     lightboxCaption.textContent = photo.title || "";
     lightbox.hidden = false;
