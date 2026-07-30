@@ -1,9 +1,309 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0a192f"><meta name="description" content="Charles Fleming AI portfolio covering Agentic AI, Agentic RAG, n8n automation, Claude, Gemini, Copilot, and AI-enabled applications."><title>AI Projects | Charles Fleming</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css">  <script>
-    (() => {
-      const saved = localStorage.getItem('portfolio-theme');
-      const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-      document.documentElement.dataset.theme = saved || preferred;
-    })();
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="Charles Fleming AI portfolio covering Agentic AI, Agentic RAG, n8n automation, Claude, Gemini, Copilot, and AI-enabled applications." name="description"/>
+  <title>
+   AI Projects | Charles Fleming
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="nav">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="CF logo" src="assets/images/cf-logo.png"/>
+     <span>
+      Charles Fleming
+      <small>
+       AI Project Portfolio
+      </small>
+     </span>
+    </a>
+    <button aria-label="Open navigation" class="menu">
+     ☰
+    </button>
+    <nav class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a class="active" href="ai-projects.html">
+      AI Projects
+     </a>
+     <a href="web-automation.html">
+      Web &amp; Automation
+     </a>
+     <a href="photography.html">
+      Photography
+     </a>
+     <a href="index.html#contact">
+      Contact
+     </a>
+    </nav>
+    <a class="btn btn-primary" href="index.html#contact">
+     Let’s Connect
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="project-hero">
+    <div class="container">
+     <div class="eyebrow">
+      AI Portfolio
+     </div>
+     <h1>
+      Practical AI projects built around
+      <span class="gradient">
+       business outcomes.
+      </span>
+     </h1>
+     <p class="lead">
+      This portfolio is designed to link to GitHub repositories, live demonstrations, architecture diagrams, screenshots, and detailed case studies as projects are published.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="grid">
+      <article class="card reveal">
+       <div class="label">
+        Agentic AI
+       </div>
+       <h3>
+        Multi-Agent Workflow Assistant (not completed)
+       </h3>
+       <p>
+        An orchestrated system where specialized agents plan, research, validate, and produce an auditable result.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         Agents
+        </span>
+        <span class="tag">
+         Tool Use
+        </span>
+        <span class="tag">
+         Guardrails
+        </span>
+       </div>
+       <div class="links">
+        <a href="#">
+         GitHub
+        </a>
+        <a href="#">
+         Live Demo
+        </a>
+        <a href="#">
+         Case Study
+        </a>
+       </div>
+      </article>
+      <article class="card reveal">
+       <div class="label">
+        Agentic RAG
+       </div>
+       <h3>
+        Enterprise Knowledge Assistant
+       </h3>
+       <p>
+        AI-powered Retrieval-Augmented Generation (RAG) assistant that securely searches a postgres database and delivers real-time hardware information through a voice agent.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         RAG
+        </span>
+        <span class="tag">
+         Vector Search
+        </span>
+        <span class="tag">
+         Supabase
+        </span>
+       </div>
+       <div class="links">
+        <a href="https://elevenlabs.io">
+         ElevenLabs
+        </a>
+        <a href="https://elevenlabs.io/app/talk-to?agent_id=agent_7701kys6mjz3eans15ev96qdvmdv&amp;branch_id=agtbrch_7201kys6mkrsegasep9brebde9qm" rel="noopener noreferrer" target="_blank">
+         Live Demo
+        </a>
+       </div>
+      </article>
+      <article class="card reveal">
+       <div class="label">
+        Automation
+       </div>
+       <h3>
+        n8n AI Operations Workflow
+       </h3>
+       <p>
+        AI-driven investment portfolio assistant that uses a web form, Google Sheets, and intelligent automation to rebalance stock portfolios based on user-defined allocation targets.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         n8n
+        </span>
+        <span class="tag">
+         Google Sheets
+        </span>
+        <span class="tag">
+         APIs
+        </span>
+       </div>
+       <div class="links">
+        <a href="https://cfleming.app.n8n.cloud/form/a9b2030c-2f3b-4319-8f80-2952cc29b51c">
+         Live Demo
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1eSJ344FHZTZivDFIXQNGpqE6vMyrLcVhTSdGWrErG0c/edit?usp=sharing">
+         Stock Portfolio
+        </a>
+       </div>
+      </article>
+      <article class="card reveal">
+       <div class="label">
+        Financial Technology
+       </div>
+       <h3>
+        AI-Assisted Budget Application (in progress)
+       </h3>
+       <p>
+        A household budgeting platform with structured income, bills, accounts, forecasting, and future AI assistance.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         TypeScript
+        </span>
+        <span class="tag">
+         Supabase
+        </span>
+        <span class="tag">
+         AI
+        </span>
+       </div>
+       <div class="links">
+        <a href="#">
+         GitHub
+        </a>
+        <a href="#">
+         Product Demo
+        </a>
+       </div>
+      </article>
+      <article class="card reveal">
+       <div class="label">
+        Prompt Engineering
+       </div>
+       <h3>
+        Model Comparison Lab
+       </h3>
+       <p>
+        Designed custom GPT assistants using advanced prompt engineering to deliver accurate, consistent, and domain-specific AI experiences.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         ChatGPT
+        </span>
+        <span class="tag">
+         Prompt Engineering
+        </span>
+        <span class="tag">
+         LLMs
+        </span>
+       </div>
+       <div class="links">
+        <a href="#">
+         Results
+        </a>
+        <a href="https://chatgpt.com/g/g-6911bdb393d8819194a85a2031ea6c5d-caic-study-agent">
+         AI Study GPT
+        </a>
+        </a>
+        <a href="https://chatgpt.com/g/g-69169c51d5b88191967b6c77edf51d1d-gpt-for-hoya-plants">
+         Hoya Plants GPT
+        </a>
+       </div>
+      </article>
+      <article class="card reveal">
+       <div class="label">
+        AI + Infrastructure
+       </div>
+       <h3>
+        Operations Knowledge Copilot
+       </h3>
+       <p>
+        A concept for retrieving runbooks, architecture standards, troubleshooting steps, and program documentation for infrastructure teams.
+       </p>
+       <div class="tag-row">
+        <span class="tag">
+         Infrastructure
+        </span>
+        <span class="tag">
+         RAG
+        </span>
+        <span class="tag">
+         Observability
+        </span>
+       </div>
+       <div class="links">
+        <a href="#">
+         Architecture
+        </a>
+        <a href="#">
+         Roadmap
+        </a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section alt">
+    <div class="container">
+     <div class="cta">
+      <div>
+       <div class="kicker">
+        Project Publishing
+       </div>
+       <h2>
+        Each project can become a complete case study.
+       </h2>
+       <p>
+        Add a business problem, architecture, screenshots, technology stack, lessons learned, GitHub repository, and live demonstration.
+       </p>
+      </div>
+      <div class="cta-actions">
+       <a class="btn btn-primary" href="https://github.com/" rel="noopener" target="_blank">
+        Open GitHub
+       </a>
+       <a class="btn btn-secondary" href="index.html#contact">
+        Discuss a Project
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container footer-inner">
+    <div>
+     ©
+     <span id="year">
+     </span>
+     Charles Fleming.
+    </div>
+    <div class="footer-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="web-automation.html">
+      Web &amp; Automation
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="assets/js/app.js">
   </script>
-</head><body><header class="nav"><div class="container nav-inner"><a class="brand" href="index.html"><img src="assets/images/cf-logo.png" alt="CF logo"><span>Charles Fleming<small>AI Project Portfolio</small></span></a><button class="menu" aria-label="Open navigation">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="ai-projects.html">AI Projects</a><a href="web-automation.html">Web & Automation</a><a href="photography.html">Photography</a><a href="index.html#contact">Contact</a></nav><a class="btn btn-primary" href="index.html#contact">Let’s Connect</a></div></header><main><section class="project-hero"><div class="container"><div class="eyebrow">AI Portfolio</div><h1>Practical AI projects built around <span class="gradient">business outcomes.</span></h1><p class="lead">This portfolio is designed to link to GitHub repositories, live demonstrations, architecture diagrams, screenshots, and detailed case studies as projects are published.</p><div class="notice">Replace each placeholder GitHub and demo URL with your project links. The page structure is already ready for expansion.</div></div></section><section class="section"><div class="container"><div class="grid"><article class="card reveal"><div class="label">Agentic AI</div><h3>Multi-Agent Workflow Assistant</h3><p>An orchestrated system where specialized agents plan, research, validate, and produce an auditable result.</p><div class="tag-row"><span class="tag">Agents</span><span class="tag">Tool Use</span><span class="tag">Guardrails</span></div><div class="links"><a href="#">GitHub</a><a href="#">Live Demo</a><a href="#">Case Study</a></div></article><article class="card reveal"><div class="label">Agentic RAG</div><h3>Enterprise Knowledge Assistant</h3><p>A retrieval-augmented assistant designed to search governed source material and provide grounded answers with citations.</p><div class="tag-row"><span class="tag">RAG</span><span class="tag">Vector Search</span><span class="tag">Citations</span></div><div class="links"><a href="#">GitHub</a><a href="#">Architecture</a></div></article><article class="card reveal"><div class="label">Automation</div><h3>n8n AI Operations Workflow</h3><p>Connects forms, Google Sheets, email, APIs, and an AI model to classify requests, route work, and generate summaries.</p><div class="tag-row"><span class="tag">n8n</span><span class="tag">Google Sheets</span><span class="tag">APIs</span></div><div class="links"><a href="#">Workflow</a><a href="#">Demo</a></div></article><article class="card reveal"><div class="label">Financial Technology</div><h3>AI-Assisted Budget Application</h3><p>A household budgeting platform with structured income, bills, accounts, forecasting, and future AI assistance.</p><div class="tag-row"><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">AI</span></div><div class="links"><a href="#">GitHub</a><a href="#">Product Demo</a></div></article><article class="card reveal"><div class="label">Prompt Engineering</div><h3>Model Comparison Lab</h3><p>A repeatable evaluation framework for comparing Claude, Gemini, Copilot, and GPT-based workflows against defined criteria.</p><div class="tag-row"><span class="tag">Evaluation</span><span class="tag">Prompts</span><span class="tag">LLMs</span></div><div class="links"><a href="#">Results</a><a href="#">Templates</a></div></article><article class="card reveal"><div class="label">AI + Infrastructure</div><h3>Operations Knowledge Copilot</h3><p>A concept for retrieving runbooks, architecture standards, troubleshooting steps, and program documentation for infrastructure teams.</p><div class="tag-row"><span class="tag">Infrastructure</span><span class="tag">RAG</span><span class="tag">Observability</span></div><div class="links"><a href="#">Architecture</a><a href="#">Roadmap</a></div></article></div></div></section><section class="section alt"><div class="container"><div class="cta"><div><div class="kicker">Project Publishing</div><h2>Each project can become a complete case study.</h2><p>Add a business problem, architecture, screenshots, technology stack, lessons learned, GitHub repository, and live demonstration.</p></div><div class="cta-actions"><a class="btn btn-primary" href="https://github.com/" target="_blank" rel="noopener">Open GitHub</a><a class="btn btn-secondary" href="index.html#contact">Discuss a Project</a></div></div></div></section></main><footer><div class="container footer-inner"><div>© <span id="year"></span> Charles Fleming.</div><div class="footer-links"><a href="index.html">Home</a><a href="web-automation.html">Web & Automation</a></div></div></footer><script src="assets/js/app.js"></script></body></html>
+ </body>
+</html>
