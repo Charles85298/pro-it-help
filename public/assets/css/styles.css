@@ -117,3 +117,202 @@
 :root[data-theme="light"] .ticker-group i{color:#006d7a}
 @media(max-width:640px){.theme-toggle{top:12px;right:12px;min-width:44px;width:44px;padding:0;justify-content:center}.theme-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.ticker-group span{padding:0 13px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.theme-toggle{transition:none}}
+
+/* =========================================================
+   2026 COLOR REFRESH — inspired by buildmywebpage.net
+   Keeps the editorial portfolio layout while adding brighter,
+   more varied accents and dimensional gradients.
+========================================================= */
+.portfolio-home{
+  --accent-blue:#3b82f6;
+  --accent-cyan:#22d3ee;
+  --accent-purple:#a855f7;
+  --accent-pink:#ec4899;
+  --accent-gold:#fbbf24;
+  --accent-green:#34d399;
+  background:
+    radial-gradient(circle at 8% 8%,rgba(59,130,246,.17),transparent 28%),
+    radial-gradient(circle at 88% 16%,rgba(168,85,247,.14),transparent 30%),
+    radial-gradient(circle at 74% 72%,rgba(34,211,238,.08),transparent 30%),
+    #081426;
+}
+.portfolio-home::before{
+  background:radial-gradient(650px circle at var(--mouse-x,50%) var(--mouse-y,30%),rgba(34,211,238,.12),transparent 72%);
+}
+.identity img{
+  border-color:rgba(34,211,238,.28);
+  box-shadow:0 0 0 4px rgba(59,130,246,.06),0 12px 32px rgba(0,0,0,.22);
+}
+.identity-copy strong{
+  background:linear-gradient(90deg,#f8fbff,#8be9ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.overline{
+  color:#71e8ff;
+  text-shadow:0 0 18px rgba(34,211,238,.24);
+}
+.intro-copy h1{
+  background:linear-gradient(100deg,#ffffff 4%,#8be9ff 42%,#60a5fa 67%,#c084fc 96%);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.intro-copy h2{color:#c2d5ed}
+.section-nav a:hover,.section-nav a.active{color:#8be9ff}
+.section-nav a:hover span,.section-nav a.active span{background:linear-gradient(90deg,#22d3ee,#3b82f6,#a855f7)}
+.intro-links a:hover{color:#8be9ff}
+
+.metric-grid div{
+  position:relative;
+  overflow:hidden;
+  border-color:rgba(96,165,250,.19);
+  background:linear-gradient(145deg,rgba(17,34,64,.82),rgba(13,27,52,.58));
+  box-shadow:0 14px 34px rgba(2,12,27,.22);
+}
+.metric-grid div::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:3px;
+  background:linear-gradient(180deg,#22d3ee,#3b82f6);
+}
+.metric-grid div:nth-child(2)::before{background:linear-gradient(180deg,#a855f7,#6366f1)}
+.metric-grid div:nth-child(3)::before{background:linear-gradient(180deg,#fbbf24,#f97316)}
+.metric-grid strong{color:#76e6ff}
+.metric-grid div:nth-child(2) strong{color:#c4a0ff}
+.metric-grid div:nth-child(3) strong{color:#ffd66b}
+
+.experience-item{
+  position:relative;
+  border:1px solid transparent;
+}
+.experience-list .experience-item:hover{
+  background:linear-gradient(135deg,rgba(20,43,78,.82),rgba(22,30,66,.68));
+  border-color:rgba(59,130,246,.18);
+}
+.experience-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:20px;
+  bottom:20px;
+  width:3px;
+  border-radius:3px;
+  opacity:0;
+  background:linear-gradient(180deg,#22d3ee,#3b82f6);
+  transition:.25s;
+}
+.experience-item:nth-child(2n)::before{background:linear-gradient(180deg,#a855f7,#6366f1)}
+.experience-item:nth-child(3n)::before{background:linear-gradient(180deg,#34d399,#22d3ee)}
+.experience-item:hover::before{opacity:1}
+.experience-item:hover .experience-date{color:#7dd3fc}
+.tech-list span{
+  border:1px solid rgba(34,211,238,.08);
+  background:rgba(34,211,238,.09);
+  color:#7ee9dc;
+}
+.experience-item:nth-child(2n) .tech-list span{background:rgba(168,85,247,.09);color:#d0adff;border-color:rgba(168,85,247,.1)}
+.experience-item:nth-child(3n) .tech-list span{background:rgba(59,130,246,.10);color:#93c5fd;border-color:rgba(59,130,246,.11)}
+
+.featured-project{
+  border:1px solid transparent;
+}
+.featured-projects .featured-project:hover{
+  background:linear-gradient(135deg,rgba(17,39,72,.88),rgba(28,27,66,.7));
+  border-color:rgba(96,165,250,.2);
+  box-shadow:0 18px 50px rgba(2,12,27,.28);
+}
+.project-visual{
+  border-color:rgba(125,211,252,.20);
+  box-shadow:0 14px 34px rgba(2,12,27,.38),inset 0 1px 0 rgba(255,255,255,.08);
+}
+.visual-ai{background:radial-gradient(circle at 28% 25%,rgba(34,211,238,.58),transparent 24%),radial-gradient(circle at 85% 78%,rgba(59,130,246,.34),transparent 30%),linear-gradient(135deg,#103953,#172554)}
+.visual-auto{background:radial-gradient(circle at 72% 28%,rgba(192,132,252,.58),transparent 27%),radial-gradient(circle at 15% 80%,rgba(99,102,241,.32),transparent 28%),linear-gradient(135deg,#1e293b,#312e81)}
+.visual-web{background:radial-gradient(circle at 24% 72%,rgba(34,211,238,.48),transparent 27%),radial-gradient(circle at 86% 20%,rgba(59,130,246,.42),transparent 26%),linear-gradient(135deg,#0f172a,#164e63)}
+.visual-photo{background:radial-gradient(circle at 60% 32%,rgba(251,191,36,.5),transparent 30%),radial-gradient(circle at 12% 86%,rgba(236,72,153,.27),transparent 30%),linear-gradient(135deg,#3b225f,#111827)}
+.project-copy h3 a:hover{color:#7dd3fc}
+.project-type{color:#67e8f9!important}
+
+.capability-columns>div{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(150deg,rgba(17,34,64,.76),rgba(12,27,52,.52));
+  border-color:rgba(96,165,250,.16);
+  box-shadow:0 14px 36px rgba(2,12,27,.18);
+}
+.capability-columns>div::before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;
+  height:3px;
+  background:linear-gradient(90deg,#22d3ee,#3b82f6);
+}
+.capability-columns>div:nth-child(2)::before{background:linear-gradient(90deg,#3b82f6,#a855f7)}
+.capability-columns>div:nth-child(3)::before{background:linear-gradient(90deg,#a855f7,#ec4899,#fbbf24)}
+.capability-columns>div:hover{transform:translateY(-3px);border-color:rgba(125,211,252,.28);transition:.25s}
+
+.contact-simple{
+  position:relative;
+  margin-bottom:72px;
+  padding:42px;
+  border:1px solid rgba(96,165,250,.22);
+  border-radius:24px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(168,85,247,.18),transparent 34%),
+    radial-gradient(circle at 8% 90%,rgba(34,211,238,.12),transparent 34%),
+    linear-gradient(135deg,rgba(18,42,76,.88),rgba(24,27,64,.82));
+  box-shadow:0 24px 65px rgba(2,12,27,.28);
+}
+.contact-simple h2{
+  background:linear-gradient(90deg,#fff,#8be9ff 56%,#c4a0ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.outline-button{
+  border-color:transparent;
+  color:#061321;
+  background:linear-gradient(135deg,#67e8f9,#60a5fa,#a78bfa);
+  box-shadow:0 12px 28px rgba(59,130,246,.24);
+}
+.outline-button:hover{background:linear-gradient(135deg,#8be9ff,#7db4ff,#c4a0ff);transform:translateY(-2px)}
+.skills-ticker{border-color:rgba(96,165,250,.18);background:linear-gradient(90deg,rgba(8,20,38,.94),rgba(16,31,58,.92),rgba(20,25,58,.94))}
+.ticker-group i{color:#67e8f9}
+.ticker-group:nth-child(even) i{color:#c084fc}
+
+/* Matching colorful treatment for light mode */
+:root[data-theme="light"] .portfolio-home{
+  background:
+    radial-gradient(circle at 8% 8%,rgba(59,130,246,.12),transparent 30%),
+    radial-gradient(circle at 88% 16%,rgba(168,85,247,.09),transparent 30%),
+    radial-gradient(circle at 74% 72%,rgba(34,211,238,.07),transparent 30%),
+    #f7fafc;
+}
+:root[data-theme="light"] .intro-copy h1{
+  background:linear-gradient(100deg,#10233b 4%,#007f9c 42%,#2563eb 68%,#7c3aed 96%);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+:root[data-theme="light"] .identity-copy strong{background:linear-gradient(90deg,#10233b,#075fbd);-webkit-background-clip:text;color:transparent}
+:root[data-theme="light"] .metric-grid div,
+:root[data-theme="light"] .capability-columns>div{background:linear-gradient(145deg,#fff,#f5f8fd);border-color:rgba(37,99,235,.15)}
+:root[data-theme="light"] .experience-list .experience-item:hover,
+:root[data-theme="light"] .featured-projects .featured-project:hover{background:linear-gradient(135deg,#fff,#f4f7ff);border-color:rgba(37,99,235,.14)}
+:root[data-theme="light"] .metric-grid strong{color:#087d91}
+:root[data-theme="light"] .metric-grid div:nth-child(2) strong{color:#7043b6}
+:root[data-theme="light"] .metric-grid div:nth-child(3) strong{color:#9a6500}
+:root[data-theme="light"] .experience-item:nth-child(2n) .tech-list span{background:rgba(124,58,237,.08);color:#7043b6}
+:root[data-theme="light"] .experience-item:nth-child(3n) .tech-list span{background:rgba(37,99,235,.08);color:#1d5fbf}
+:root[data-theme="light"] .contact-simple{
+  background:radial-gradient(circle at 90% 10%,rgba(124,58,237,.09),transparent 34%),radial-gradient(circle at 8% 90%,rgba(8,145,178,.09),transparent 34%),linear-gradient(135deg,#ffffff,#eef5ff);
+  border-color:rgba(37,99,235,.18);
+  box-shadow:0 22px 55px rgba(23,42,66,.11);
+}
+:root[data-theme="light"] .contact-simple h2{background:linear-gradient(90deg,#10233b,#075fbd 55%,#7043b6);-webkit-background-clip:text;color:transparent}
+:root[data-theme="light"] .outline-button{color:#fff;border-color:transparent;background:linear-gradient(135deg,#0891b2,#2563eb,#7c3aed)}
+:root[data-theme="light"] .outline-button:hover{background:linear-gradient(135deg,#0e7490,#1d4ed8,#6d28d9)}
+:root[data-theme="light"] .skills-ticker{background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(239,246,255,.94),rgba(245,243,255,.94))}
+
+@media(max-width:640px){
+  .contact-simple{padding:30px 22px;margin-bottom:44px}
+}
