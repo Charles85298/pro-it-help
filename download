@@ -1,5 +1,0 @@
-node_modules/
-.wrangler/
-.dev.vars
-*.zip
-.DS_Store
